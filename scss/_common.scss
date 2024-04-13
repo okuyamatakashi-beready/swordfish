@@ -1,0 +1,84 @@
+@use "config/variables" as v;
+
+
+
+.flex {
+    @include v.flex;
+}
+
+.min_container {
+    @include v.min;
+}
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+.smallest_container {
+    @include v.min_min;
+}
+br.sp {
+    display: none;
+}
+br.pc {
+    display: block;
+}
+.pc {
+    display: block;
+}
+.sp {
+    display: none;
+}
+.non_image {
+    background-image: url(../images/common/non_image.jpg);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .pc {
+        display: none!important;
+    }
+    .sp {
+        display: block!important;
+    }
+    .container {
+        min-width: 1px;
+        
+        width: 84%;
+    }
+    .order_1 {
+        order: 2;
+    }
+    .order_2 {
+        order: 1;
+    }
+    br.sp {
+        display: block;
+    }
+    a.common_btn {
+        margin: auto;
+    }
+    .smallest_container {
+        width: 89%;
+    }
+    .slick-next {
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/common/point_next.svg)!important;
+        background-size: contain;
+    }
+    .slick-next:before {
+        content: "";
+        
+    }
+    .slick-prev {
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/common/point_prev.svg)!important;
+        background-size: contain;
+    }
+    .slick-prev:before {
+        content: "";
+        
+    }
+}

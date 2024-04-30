@@ -12,11 +12,6 @@ main {
 /*font読み込み*/
 
 
-@font-face {
-  font-family: 'NotoSans';
-  src: url('../fonts/NotoSansJP-Light.otf') format('opentype');
-  font-weight: normal;
-}
 
 button{
   background-color: transparent;
@@ -53,13 +48,7 @@ html {
   font-size: 0.520833vw;
 }
 body {
-  font-family:
-
-  'LexendDeca',"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", 'LexendDeca',Arial,
-    "Hiragino Sans",
-    
-    Meiryo,
-    sans-serif;
+  font-family:"noto-sans-cjk-jp", 'LexendDeca',Arial, "Hiragino Sans",Meiryo,sans-serif;
 	font-size: 88%;
 	line-height: 1.5;
   font-weight: 300;

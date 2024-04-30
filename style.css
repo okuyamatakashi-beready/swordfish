@@ -1,21 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*
-Theme Name: OneDiningTable
+Theme Name: Sword Fish
 Theme URI: 
-Description: OneDiningTable original wordpress theme
+Description: Sword Fish original wordpress theme
 Version: 1.0
 */
-@font-face {
-  font-family: "midashi";
-  src: url("./fonts/A-OTF-MidashiGoPro-MB31.woff") format("woff");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "LexendDeca";
-  src: url("./fonts/LexendDeca-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-}
 * {
   margin: 0;
   padding: 0;
@@ -27,11 +17,6 @@ main {
 }
 
 /*font読み込み*/
-@font-face {
-  font-family: "NotoSans";
-  src: url("../fonts/NotoSansJP-Light.otf") format("opentype");
-  font-weight: normal;
-}
 button {
   background-color: transparent;
   border: none;
@@ -70,7 +55,7 @@ html {
 }
 
 body {
-  font-family: "LexendDeca", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "LexendDeca", Arial, "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "noto-sans-cjk-jp", "LexendDeca", Arial, "Hiragino Sans", Meiryo, sans-serif;
   font-size: 88%;
   line-height: 1.5;
   font-weight: 300;

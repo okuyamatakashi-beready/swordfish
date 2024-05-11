@@ -42,6 +42,7 @@
 -------------------------*/
 #about {
     padding-top: 12rem;
+    margin-bottom: 3rem;
     .left_container {
         width: 84.375%;
         margin-right: auto;
@@ -62,6 +63,243 @@
         
         .about__right {
             margin-left: 17rem;
+        }
+    }
+}
+
+
+/*-------------------------
+    MENU
+-------------------------*/
+#menu {
+    padding-top: 17rem;
+    margin-bottom: 10rem;
+   .menu__wrapper {
+    position: relative;
+    align-items: flex-start;
+        .menu__wrapper--left {
+            width: 74%;
+            ul {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li {
+                    &:first-child {
+                        width: 100%;
+                        padding-top: 35%;
+                    }
+                    width: 49%;
+                    padding-top: 25%;
+                    padding-bottom: 2%;
+                    text-align: center;
+                    @include v.bg;
+                    margin-top: 2%;
+                    a {
+                        display: block;
+                        margin: auto;
+                        width: 320px;
+                        background-color: #fff;
+                        color: #204F6A;
+                        font-size: clamp(14px,1.6rem,18px);
+                    }
+                    &.aonodokutsu {
+                        background-image: url(./../images/top/aonodokutsu.jpg);
+                    }
+                    &.sup {
+                        background-image: url(./../images/top/sup.jpg);
+                    }
+                    &.marinactivity {
+                        background-image: url(./../images/top/marinactivity.jpg);
+                    }
+                    &.pala {
+                        background-image: url(./../images/top/pala.jpg);
+                    }
+                    &.bbq {
+                        background-image: url(./../images/top/bbq.jpg);
+                    }
+                    &.fishing {
+                        background-image: url(./../images/top/fishing.jpg);
+                    }
+                }
+            }
+        }
+   }
+   .menu__wrapper--right {
+        position: sticky;
+        top: 15rem;
+        right: 0;
+        width: 15%;
+        margin-right: 5%;
+   }
+}
+
+/*-------------------------
+    feature
+-------------------------*/
+#feature {
+    .container {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .feature__content {
+        align-items: flex-start;
+        margin-bottom: 15rem;
+        .feature__text {
+            width: 40%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-flow: column;
+            span {
+                display: inline-block;
+                color: #fff;
+                background: #004BB1;
+                font-size: clamp(16px,20px,24px);
+                font-weight: bold;
+                border-radius: 8px;
+                width: 130px;
+                text-align: center;
+                padding: 5px 0;
+            }
+            .feature__ttl {
+                width: 100%;
+                strong {
+                    font-size: clamp(30px,35px,48px);
+                    display: block;
+                    color: #214F6A;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 40px;
+                        height: 5px;
+                        background-color: #214F6A;
+                        position: absolute;
+                        left: 0;
+                        bottom: -20px;
+                    }
+                }
+                p {
+                    font-size: clamp(14px,1.6rem,18px);
+                    line-height: 1.8;
+                    margin-top: 5rem;
+                }
+            }
+
+        }
+        .feature__text--right {
+            order: 2;
+            width: 30%;
+            margin-left: 15rem;
+        }
+        .feature__images {
+            width: 60%;
+            padding-top: 40%;
+            @include v.bg;
+            box-shadow: 0px 0px 40px rgba(19, 54, 111, 0.3);
+        }
+
+    }
+    .feature__content--01 {
+        .feature__images {
+            background-image: url(./../images/top/feature01.jpg);
+        }
+    }
+    .feature__content--02 {
+        .feature__images {
+            background-image: url(./../images/top/feature02.jpg);
+        }
+    }
+    .feature__content--03 {
+        .feature__images {
+            background-image: url(./../images/top/feature03.jpg);
+        }
+    }
+}
+
+
+/*-------------------------
+    staff
+-------------------------*/
+#staff {
+    padding-top: 7rem;
+    .container {
+        width: 68.75%;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul {
+            justify-content: space-between;
+            margin-top: 6rem;
+            li {
+                width: 18%;
+                margin-bottom: 8rem;
+                .member__thumb {
+                    width: 100%;
+                    padding-top: 100%;
+                    @include v.bg;
+                    margin-bottom: 3rem;
+                    border-radius: 50%;
+                }
+                .member__text {
+                    b {
+                       font-size:  clamp(1.8rem, 1.582rem + 1.09vw, 2.4rem);
+                       display: block;
+                       text-align: center;
+                       margin-bottom: 1rem;
+                    }
+                    span {
+                        text-align: center;
+                        display: block;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------
+    news
+-------------------------*/
+#news {
+    width: 100%;
+    position: relative;
+    .container {
+        width: 68.75%;
+        margin-left: auto;
+        margin-right: auto;
+        ul {
+            flex-wrap: wrap;
+            margin-top: 6rem;
+            li {
+                width: 32%;
+                padding-top: 20%;
+                @include v.bg;
+                padding-bottom: 3%;
+                a {
+                    display: block;
+                    .post_ttl {
+                        color: #fff;
+                        width: 90%;
+                        margin: auto;
+                        span {
+                            color: #fff;
+                            font-size: 13px;
+                            border: 1px solid #fff;
+                            display: inline-block;
+                            border-radius: 25px;
+                            width: 80px;
+                            text-align: center;
+                            padding: 0px 0;
+                            margin-bottom: 8px;
+                        }
+                        h3 {
+                            font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
         }
     }
 }

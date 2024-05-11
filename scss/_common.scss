@@ -54,7 +54,7 @@ br.pc {
 
 header {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -134,7 +134,7 @@ header {
         }
     }
     p.section__content--text {
-        font-size: 16px;
+        font-size: clamp(1.2rem, 1.055rem + 0.73vw, 1.6rem);
         color: #3B4043;
         line-height: 2;
         margin-bottom: 6rem;
@@ -142,6 +142,56 @@ header {
 }
 
 
+/*-------------------------
+    流れる文字
+-------------------------*/
+.scroll__textWrapper {
+        white-space: nowrap;
+        width: 100%;
+        position: relative;
+    .big__slideText {
+        color: #F1F8FE;
+        font-size: clamp(100px,12rem,200px);
+        font-weight: bold;
+        display: inline-block;
+        letter-spacing: 0.06em;
+        margin-right: 2rem;
+    }
+
+}
+
+/*-------------------------
+    中央揃いタイトル
+-------------------------*/
+h2.sec_ttl--center {
+    text-align: center;
+    span {
+        font-family: "din-2014", sans-serif;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        position: relative;
+        font-weight: normal;
+        color: #204F6A;
+        &::before {
+            content: "";
+            width: 20px;
+            height: 2px;
+            background: #204F6A;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    strong {
+        display: block;
+        font-size: clamp(2.1rem, 1.336rem + 3.82vw, 4.2rem);
+        color: #204F6A;
+        margin-top: 4rem;
+    }
+}
 
 
 @media screen and (max-width: 768px) {

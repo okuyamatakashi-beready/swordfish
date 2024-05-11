@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-
+@font-face {
+    font-family: 'antro';  /* 任意のフォント名を設定 */
+    src: url('./fonts/Antro_Vectra.otf');  /* フォントファイルへのパスを設定 */
+    format: ('opentype');  /* フォントのフォーマットを指定 */
+}

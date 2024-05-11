@@ -1,7 +1,6 @@
 @use "config/variables" as v;
 
 
-
 .flex {
     @include v.flex;
 }
@@ -241,5 +240,111 @@ h2.sec_ttl--center {
     .slick-prev:before {
         content: "";
         
+    }
+}
+
+
+/*-------------------------
+    Footer
+-------------------------*/
+
+#footer {
+    padding-top: 7rem;
+    background-color: #204F6A;
+    padding-bottom: 14rem;
+    .container {
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
+        .flex {
+            align-items: flex-start;
+        }
+        .footer__left {
+            width: 40%;
+            a.footer_logo {
+                margin-bottom: 4rem;
+                display: block;
+                img {
+                    width: 360px;
+                }
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.5em;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+            a.footer_tel {
+                font-size: clamp(16px, 1.091rem + 2.55vw, 3rem);
+                color: #fff;
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+        .footer__right {
+            width: 50%;
+            ul.footer__nav {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-bottom: 6rem;
+                li {
+                    display: inline-block;
+                    margin-right: 4rem;
+                    letter-spacing: 0.1em;
+                    margin-bottom: 6rem;
+                    a {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+            ul.footer__sns {
+                justify-content: flex-start;
+                li {
+                    width: 25px;
+                    margin-right: 4rem;
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------------
+    固定ページ共通
+-------------------------*/
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        @include v.bg;
+        width: 57%;
+        height: 600px;
+        order: 2;
+        border-bottom-left-radius: 50px;
+    }
+    .page__mainVisual--content {
+        position: relative;
+        width: 43%;
+        h1 {
+            position: relative;
+            right: -12rem;
+            top: 0;
+            span {
+                font-family: 'antro';
+                color: #99C8E3;
+                line-height: 1.2;
+                font-weight: normal;
+                font-size: clamp(125px, 10.5rem + 10vw, 18rem);
+            }
+            b {
+                color: #214F6A;
+                font-size: clamp(48px, 4.036rem + 3.82vw, 6.9rem);
+            }
+        }
     }
 }

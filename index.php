@@ -1,83 +1,4 @@
-
-<!DOCTYPE html>
-	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-		
-		
-		<title>SwordFish</title>
-
-
-		<!-- CSS -->
-		<link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css">
-		<link href="<?php echo get_template_directory_uri(); ?>/scss/main.css?<?php echo date('Ymd'); ?>" rel="stylesheet" type="text/css">
-		<link href="<?php echo get_template_directory_uri(); ?>/scss/slick-theme.css?<?php echo date('Ymd'); ?>" rel="stylesheet" type="text/css">
-		<link href="<?php echo get_template_directory_uri(); ?>/scss/slick.css?<?php echo date('Ymd'); ?>" rel="stylesheet" type="text/css">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/common/favicon.ico" id="favicon">
-
-		<script>
-			(function(d) {
-				var config = {
-				kitId: 'nxu4hva',
-				scriptTimeout: 3000,
-				async: true
-				},
-				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-			})(document);
-		</script>
-		
-		<?php wp_head(); ?>
-	</head>
-<body>
-		<!-- <div id="full_screen">
-			<div id="iframe_player_api"></div>
-			<span id="close_btn"><img src="</?php echo get_template_directory_uri(); ?>/images/close.png" width="60" alt="×" /></span>
-		</div> -->
-
-	<header id="header">
-		<div class="header__wrap">
-			<div class="flex">
-				<a href="/" class="header__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg">
-				</a>
-
-				<ul class="flex">
-					<li>
-						<a href="">ホーム</a>
-					</li>
-					<li>
-						<a href="">Sword Fishとは</a>
-					</li>
-					<li>
-						<a href="">メニュー</a>
-					</li>
-					<li>
-						<a href="">Food</a>
-					</li>
-					<li>
-						<a href="">特徴</a>
-					</li>
-					<li>
-						<a href="">スタッフ</a>
-					</li>
-					<li>
-						<a href="">お知らせ</a>
-					</li>
-					<li>
-						<a href="">予約</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</header>
-	<!-- //header -->
-
-	<div id="toggle">
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
+<?php get_header(); ?>
 
 	<main>
 		<div id="mv">
@@ -314,25 +235,104 @@
 					<?php wp_reset_postdata(); ?>	
 
 				</ul>
+
+				<a href="/" class="common__btn">詳しく見る</a>
 			</div>
 		</section>
+
+		<div id="contact__wrap">
+			<div class="container">
+				<div class="flex">
+					<div class="contact__btn--wrapper">
+						<div class="contact__btn--content">
+							<strong>Contact Us</strong>
+							<span>お問い合わせ</span>
+						</div>
+						<img src="<?php echo get_template_directory_uri();?>/images/common/contact-arrow.svg" alt="">
+					</div>
+					<div class="contact__btn--wrapper">
+						<div class="contact__btn--content">
+							<strong>Reserve</strong>
+							<span>ご予約</span>
+						</div>
+						<img src="<?php echo get_template_directory_uri();?>/images/common/contact-arrow.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="flex">
+					<div class="footer__left">
+						<a href="/" class="footer_logo">
+							<img src="<?php echo get_template_directory_uri();?>/images/common/footer_logo.png" alt="">
+						</a>
+						<p>
+							〒904-0417<br>
+							沖縄県国頭郡恩納村字真栄田928番地1
+						</p>
+						<a href="tel:0989630551" class="footer_tel">098-963-0551<span>（受付時間 8:00~20:00）</span></a>
+					</div>
+					<!-- //footer__left -->
+
+					<div class="footer__right">
+						<ul class="footer__nav flex">
+							<li>
+								<a href="">ホーム</a>
+							</li>
+							<li>
+								<a href="">メニュー</a>
+							</li>
+							<li>
+								<a href="">ショップ</a>
+							</li>
+							<li>
+								<a href="">スタッフ</a>
+							</li>
+							<li>
+								<a href="">Q&A</a>
+							</li>
+							<li>
+								<a href="">ニュース</a>
+							</li>
+							<li>
+								<a href="">ご予約</a>
+							</li>
+							<li>
+								<a href="">プライバシーポリシー</a>
+							</li>
+							<li>
+								<a href="">特定商取引法に基づく表記</a>
+							</li>
+						</ul>
+
+						<ul class="footer__sns flex">
+							<li>
+								<a href="">
+									<img src="<?php echo get_template_directory_uri();?>/images/common/ft_instagram.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="<?php echo get_template_directory_uri();?>/images/common/ft_twitter.svg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="<?php echo get_template_directory_uri();?>/images/common/ft_facebook.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //footer__right -->
+				</div>
+			</div>
+		</footer>
 
 	</main>
 	
 
 </body>
 
-<?php wp_footer(); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.arctext.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/infiniteslidev2.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
-<script src="<?php echo get_template_directory_uri(); ?>/js/movie.js"></script>
-	
-</html>
+<?php get_footer(); ?>

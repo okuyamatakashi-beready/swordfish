@@ -1,0 +1,8 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        background-image: url(./../../images/about/mv.png);
+    }
+}

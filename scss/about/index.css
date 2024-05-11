@@ -1,0 +1,346 @@
+@charset "UTF-8";
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+
+.min_container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.smallest_container {
+  width: 640px;
+  margin: 0 auto;
+}
+
+br.sp {
+  display: none;
+}
+
+br.pc {
+  display: block;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+.non_image {
+  background-image: url(../images/common/non_image.jpg);
+}
+
+/*-------------------------
+    ボタン
+-------------------------*/
+.common__btn {
+  width: 200px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  background-color: #214F69;
+  font-weight: bold;
+  padding: 18px 0;
+  border-radius: 50px;
+}
+
+/*-------------------------
+    ヘッダー
+-------------------------*/
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 5000;
+}
+header .header__wrap {
+  width: 100%;
+}
+header .header__wrap a.header__logo {
+  width: 246px;
+  margin-left: 23px;
+}
+header .header__wrap a.header__logo img {
+  width: 100%;
+}
+header .header__wrap ul {
+  width: 60%;
+}
+header .header__wrap ul li a {
+  color: #3B4043;
+  padding: 38px 0;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+header .header__wrap ul li:last-child {
+  width: 172px;
+}
+header .header__wrap ul li:last-child a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #214F6A;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/*-------------------------
+    セクションのタイトル
+-------------------------*/
+.section__content h2.section__content--ttl {
+  margin-bottom: 5.7rem;
+}
+.section__content h2.section__content--ttl small {
+  font-family: "din-2014", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  display: inline-block;
+  padding-left: 40px;
+  position: relative;
+  color: #204F6A;
+  margin-bottom: 8px;
+}
+.section__content h2.section__content--ttl small::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #204F6A;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  margin: auto;
+}
+.section__content h2.section__content--ttl span {
+  display: block;
+  font-size: clamp(29px, 3.2rem, 43px);
+  font-weight: 900;
+  color: #204F6A;
+}
+.section__content p.section__content--text {
+  font-size: clamp(1.2rem, 1.055rem + 0.73vw, 1.6rem);
+  color: #3B4043;
+  line-height: 2;
+  margin-bottom: 6rem;
+}
+
+/*-------------------------
+    流れる文字
+-------------------------*/
+.scroll__textWrapper {
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+.scroll__textWrapper .big__slideText {
+  color: #F1F8FE;
+  font-size: clamp(100px, 12rem, 200px);
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  margin-right: 2rem;
+}
+
+/*-------------------------
+    中央揃いタイトル
+-------------------------*/
+h2.sec_ttl--center {
+  text-align: center;
+}
+h2.sec_ttl--center span {
+  font-family: "din-2014", sans-serif;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-weight: normal;
+  color: #204F6A;
+}
+h2.sec_ttl--center span::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #204F6A;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+h2.sec_ttl--center strong {
+  display: block;
+  font-size: clamp(2.1rem, 1.336rem + 3.82vw, 4.2rem);
+  color: #204F6A;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+  .container {
+    min-width: 1px;
+    width: 84%;
+  }
+  .order_1 {
+    order: 2;
+  }
+  .order_2 {
+    order: 1;
+  }
+  br.sp {
+    display: block;
+  }
+  a.common_btn {
+    margin: auto;
+  }
+  .smallest_container {
+    width: 89%;
+  }
+  .slick-next {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/common/point_next.svg) !important;
+    background-size: contain;
+  }
+  .slick-next:before {
+    content: "";
+  }
+  .slick-prev {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/common/point_prev.svg) !important;
+    background-size: contain;
+  }
+  .slick-prev:before {
+    content: "";
+  }
+}
+/*-------------------------
+    Footer
+-------------------------*/
+#footer {
+  padding-top: 7rem;
+  background-color: #204F6A;
+  padding-bottom: 14rem;
+}
+#footer .container {
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer .container .flex {
+  align-items: flex-start;
+}
+#footer .container .footer__left {
+  width: 40%;
+}
+#footer .container .footer__left a.footer_logo {
+  margin-bottom: 4rem;
+  display: block;
+}
+#footer .container .footer__left a.footer_logo img {
+  width: 360px;
+}
+#footer .container .footer__left p {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+#footer .container .footer__left a.footer_tel {
+  font-size: clamp(16px, 1.091rem + 2.55vw, 3rem);
+  color: #fff;
+}
+#footer .container .footer__left a.footer_tel span {
+  font-size: 14px;
+}
+#footer .container .footer__right {
+  width: 50%;
+}
+#footer .container .footer__right ul.footer__nav {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 6rem;
+}
+#footer .container .footer__right ul.footer__nav li {
+  display: inline-block;
+  margin-right: 4rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 6rem;
+}
+#footer .container .footer__right ul.footer__nav li a {
+  color: #fff;
+  font-size: 14px;
+}
+#footer .container .footer__right ul.footer__sns {
+  justify-content: flex-start;
+}
+#footer .container .footer__right ul.footer__sns li {
+  width: 25px;
+  margin-right: 4rem;
+}
+#footer .container .footer__right ul.footer__sns li a img {
+  width: 100%;
+}
+
+/*-------------------------
+    固定ページ共通
+-------------------------*/
+.page__mainVisual .page__mainVisual--thumb {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 57%;
+  height: 600px;
+  order: 2;
+  border-bottom-left-radius: 50px;
+}
+.page__mainVisual .page__mainVisual--content {
+  position: relative;
+  width: 43%;
+}
+.page__mainVisual .page__mainVisual--content h1 {
+  position: relative;
+  right: -12rem;
+  top: 0;
+}
+.page__mainVisual .page__mainVisual--content h1 span {
+  font-family: "antro";
+  color: #99C8E3;
+  line-height: 1.2;
+  font-weight: normal;
+  font-size: clamp(125px, 10.5rem + 10vw, 18rem);
+}
+.page__mainVisual .page__mainVisual--content h1 b {
+  color: #214F6A;
+  font-size: clamp(48px, 4.036rem + 3.82vw, 6.9rem);
+}
+
+.page__mainVisual .page__mainVisual--thumb {
+  background-image: url(./../../images/about/mv.png);
+}/*# sourceMappingURL=index.css.map */

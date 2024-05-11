@@ -264,10 +264,25 @@
 #news {
     width: 100%;
     position: relative;
+    padding: 8rem 0;
+    &::before {
+        content: "";
+        background-color: #F1F8FF;
+        width: 94.5%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
     .container {
         width: 68.75%;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        z-index: 10;
         ul {
             flex-wrap: wrap;
             margin-top: 6rem;
@@ -297,6 +312,70 @@
                             font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
                             font-weight: bold;
                         }
+                    }
+                }
+            }
+        }
+        a.common__btn {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 60px;
+        }
+    }
+}
+
+
+/*-------------------------
+    contact__wrap
+-------------------------*/
+#contact__wrap {
+    padding-top: 20rem;
+    padding-bottom: 12rem;
+    .container {
+        width: 93%;
+        margin-right: auto;
+        margin-left: auto;
+        .flex {
+            .contact__btn--wrapper {
+                padding: 11rem 0;
+                width: 48%;
+                position: relative;
+                box-shadow: 0px 0px 40px rgba(19, 54, 111, 0.2);
+                border-radius: 50px;
+                img {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 6rem;
+                    margin: auto;
+                }
+                .contact__btn--content {
+                    strong {
+                        font-size: clamp(56px, 4.727rem + 4.36vw, 8rem);
+                        color: #204F6A;
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 5rem;
+                        position: relative;
+                        font-family: "futura-pt", sans-serif;
+                        &::before {
+                            content: "";
+                            width: 50px;
+                            height: 1px;
+                            background-color: #204F6A;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            bottom: -2rem;
+                            margin: auto;
+                        }
+                    }
+                    span {
+                        display: block;
+                        color: #204F6A;
+                        font-weight: bold;
+                        text-align: center;
+                        font-size: clamp(20px, 1.709rem + 1.45vw, 2.8rem);
                     }
                 }
             }

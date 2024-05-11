@@ -6,6 +6,11 @@ Theme URI:
 Description: Sword Fish original wordpress theme
 Version: 1.0
 */
+@font-face {
+  font-family: "antro"; /* 任意のフォント名を設定 */
+  src: url("./fonts/Antro_Vectra.otf"); /* フォントファイルへのパスを設定 */
+  format: "opentype"; /* フォントのフォーマットを指定 */
+}
 * {
   margin: 0;
   padding: 0;

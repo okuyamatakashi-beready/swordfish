@@ -1,4 +1,23 @@
-<div id="contact__wrap">
+<section id="map">
+    <div class="container">
+        <div class="flex">
+            <h2>
+                <strong>ACCESS MAP</strong>
+                <span>〒904-0417　沖縄県国頭郡恩納村字真栄田928番地1</span>
+            </h2>
+
+            <a href="" target="_blank" class="common__btn">
+                <div class="flex">
+                    <img src="<?php echo get_template_directory_uri();?>/images/common/map_icon.svg" alt="">
+                    <span>Google Mapで見る</span>
+                </div>
+            </a>
+        </div>   
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.5279586947463!2d127.76409777542311!3d26.43870557693291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5107e23f19cff%3A0x34964181acf8bde9!2z44CSOTA0LTA0MTcg5rKW57iE55yM5Zu96aCt6YOh5oGp57SN5p2R55yf5qCE55Sw77yZ77yS77yY4oiS77yR!5e0!3m2!1sja!2sjp!4v1715600763020!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+        <div id="contact__wrap">
 			<div class="container">
 				<div class="flex">
 					<div class="contact__btn--wrapper">

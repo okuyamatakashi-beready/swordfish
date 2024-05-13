@@ -16,8 +16,9 @@
 }
 
 .container {
-  width: 1020px;
+  min-width: 1020px;
   margin: 0 auto;
+  width: 68.75%;
 }
 
 .smallest_container {
@@ -43,6 +44,10 @@ br.pc {
 
 .non_image {
   background-image: url(../images/common/non_image.jpg);
+}
+
+.flex--start {
+  justify-content: flex-start;
 }
 
 /*-------------------------
@@ -311,6 +316,9 @@ h2.sec_ttl--center strong {
 /*-------------------------
     固定ページ共通
 -------------------------*/
+.page__mainVisual {
+  margin-bottom: 18.5rem;
+}
 .page__mainVisual .page__mainVisual--thumb {
   background-position: center center;
   background-repeat: no-repeat;
@@ -339,6 +347,45 @@ h2.sec_ttl--center strong {
 .page__mainVisual .page__mainVisual--content h1 b {
   color: #214F6A;
   font-size: clamp(48px, 4.036rem + 3.82vw, 6.9rem);
+}
+
+/*-------------------------
+    MAP
+-------------------------*/
+#map {
+  width: 100%;
+}
+#map .container .flex {
+  align-items: flex-start;
+}
+#map .container .flex h2 {
+  margin-bottom: 4.5rem;
+  color: #214F6A;
+}
+#map .container .flex h2 strong {
+  font-size: clamp(21px, 1.336rem + 3.82vw, 4.2rem);
+  font-weight: bold;
+  margin-right: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+#map .container .flex h2 span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+#map .container .flex a.common__btn {
+  width: 240px;
+}
+#map .container .flex a.common__btn .flex {
+  justify-content: center;
+}
+#map .container .flex a.common__btn .flex img {
+  padding-right: 10px;
+}
+#map iframe {
+  width: 100%;
+  height: 60rem;
+  border-radius: 60px;
 }
 
 /*-------------------------

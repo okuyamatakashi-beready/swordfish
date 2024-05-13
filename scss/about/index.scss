@@ -6,3 +6,113 @@
         background-image: url(./../../images/about/mv.png);
     }
 }
+#about__first {
+    margin-bottom: 15rem;
+    .flex {
+        justify-content: flex-start;
+        .about__first--img {
+            @include v.bg;
+            background-image: url(./../../images/about/about_first.jpg);
+            width: 21.25%;
+            min-width: 350px;
+            padding-top: 20%;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .about__text {
+            margin-left: 14rem;
+        }
+    }
+}
+
+p.about__text {
+    font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+    color: #214F6A;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+.features__wrap {
+    .right__container {
+        width: 84.375%;
+        margin-left: auto;
+        margin-bottom: 20rem;
+        .flex {
+            .features__img--right {
+                width: 50%;
+                padding-top: 30%;
+                background-image: url(./../../images/about/features_01.jpg);
+                border-top-left-radius: 60px;
+                border-bottom-left-radius: 60px;
+            }
+        }
+    }
+    .left__container {
+        width: 84.375%;
+        margin-right: auto;
+        margin-bottom: 15rem;
+        .features__content {
+            order: 2
+        }
+        .features__img--left {
+            order: 1;
+            width: 50%;
+            padding-top: 30%;
+            background-image: url(./../../images/about/features_04.jpg);
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 60px;
+            margin-right: 12rem;
+        }
+    }
+    .container {
+        margin-bottom: 15rem;
+        .features__img--2 {
+            width: 37.8%;
+            margin-right: 16%;
+            background-image: url(./../../images/about/features_02.jpg);
+            border-radius: 60px;
+            padding-top: 37.8%;
+            order: 1;
+        }
+        .features__img--3 {
+            background-image: url(./../../images/about/features_03.jpg);
+            width: 50%;
+            padding-top: 35.6%;
+            border-radius: 60px;
+        }
+    }
+    .features__content {
+        h3 {
+            color: #214F6A;
+            font-size: clamp(21px, 1.336rem + 3.82vw, 4.2rem);
+            margin-bottom: 3rem;
+            span {
+                font-family: "futura-pt";
+                font-weight: 400;
+                padding-left: 40px;
+                position: relative;
+                font-size: 16px;
+                display: block;
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 2px;
+                    background-color: #214F6A;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .features__content--right {
+        order: 2;
+        
+    }
+    .features__img {
+        @include v.bg;
+    }
+}

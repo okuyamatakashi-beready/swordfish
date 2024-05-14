@@ -1,0 +1,20 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        background-image: url(./../../images/aonodokutsu/mv.png);
+    }
+}
+
+.course__point {
+    .point__thumb--01 {
+        background-image: url(./../../images/aonodokutsu/point01.jpg);
+    }
+    .point__thumb--02 {
+        background-image: url(./../../images/aonodokutsu/point02.jpg);
+    }
+    .point__thumb--03 {
+        background-image: url(./../../images/aonodokutsu/point03.jpg);
+    }
+}

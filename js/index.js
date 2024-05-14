@@ -41,6 +41,9 @@ $(function() {
     });
 });
 
+/*
+	スムーススクロール
+*/
 
 let lenis = new Lenis();
 
@@ -50,3 +53,33 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+
+/*
+	hidden__menu
+*/
+document.addEventListener('DOMContentLoaded', function() {
+    var courseMenu = document.querySelector('li.course');
+    var hiddenMenu = document.querySelector('.hidden__menu');
+
+    courseMenu.addEventListener('mouseenter', function() {
+        hiddenMenu.classList.add('show');
+    });
+
+    courseMenu.addEventListener('mouseleave', function() {
+        // マウスがhiddenMenu上にある場合、showクラスを削除しない
+        setTimeout(function() {
+            if (!hiddenMenu.matches(':hover')) {
+                hiddenMenu.classList.remove('show');
+            }
+        }, 100);
+    });
+
+    hiddenMenu.addEventListener('mouseenter', function() {
+        hiddenMenu.classList.add('show');
+    });
+
+    hiddenMenu.addEventListener('mouseleave', function() {
+        hiddenMenu.classList.remove('show');
+    });
+});

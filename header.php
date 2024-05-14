@@ -46,15 +46,15 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg">
 				</a>
 
-				<ul class="flex">
+				<ul id="gnav" class="flex">
 					<li>
-						<a href="">ホーム</a>
+						<a href="/">ホーム</a>
 					</li>
 					<li>
 						<a href="/about">Sword Fishとは</a>
 					</li>
-					<li>
-						<a href="">メニュー</a>
+					<li class="course">
+						<a href="">コース</a>
 					</li>
 					<li>
 						<a href="">Food</a>
@@ -70,6 +70,50 @@
 					</li>
 					<li>
 						<a href="">予約</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="hidden__menu">
+			<div class="container">
+				<ul class="flex">
+					<li>
+						<a href="/aonodokutsu">
+							<div class="course__thumb aonodokutsu"></div>
+							<p>青の洞窟・恩納村コース</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="course__thumb sup"></div>
+							<p>SUP・シーカヤック</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="course__thumb marinactivity"></div>
+							<p>マリンアクティビティ</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="course__thumb pala"></div>
+							<p>パラセーリング</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="course__thumb bbq"></div>
+							<p>BBQ</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="course__thumb fishing"></div>
+							<p>フィッシング＆グリル</p>
+						</a>
 					</li>
 				</ul>
 			</div>

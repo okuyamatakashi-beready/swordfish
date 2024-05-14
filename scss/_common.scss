@@ -63,7 +63,9 @@ header {
     z-index: 5000;
     .header__wrap {
         width: 100%;
-        
+        position: relative;
+        z-index: 10;
+        background-color: #fff;
         a.header__logo {
             width: 246px;
             margin-left: 23px;
@@ -72,7 +74,7 @@ header {
                 width: 100%;
             }
         }
-        ul {
+        ul#gnav {
             width: 60%;
             li {
                 a {
@@ -93,6 +95,82 @@ header {
                         border-top-left-radius: 15px;
                         border-bottom-left-radius: 15px;
                     }
+                }
+                
+            }
+        }
+    }
+
+    .hidden__menu {
+        width: 100%;
+        background: #4E829F;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        position: absolute;
+        top: 100%; /* 親要素の下に配置 */
+        left: 0;
+        transition: transform 0.5s ease-out;
+        transform: translateY(-150%);
+        &.show {
+            display: block;
+            transform: translateY(0);
+        }
+        .container {
+            ul {
+                justify-content: space-around;
+                li {
+                    width: 15%;
+
+                    a {
+                        color: #fff;
+                        display: block;
+                        overflow: hidden;
+                        width: 100%;
+                        .course__thumb {
+                            @include v.bg;
+                            padding-top: 70%;
+                            transition: transform 0.5s ease-out;
+                            overflow: hidden;
+                            width: 100%;
+                            &.aonodokutsu {
+                                background-image: url(./../images/common/aonodokutsu-menu.jpg);
+                            }
+                            &.sup {
+                                background-image: url(./../images/top/sup.jpg);
+                            }
+                            &.marinactivity {
+                                background-image: url(./../images/top/marinactivity.jpg);
+                            }
+                            &.pala {
+                                background-image: url(./../images/top/pala.jpg);
+                            }
+                            &.bbq {
+                                background-image: url(./../images/top/bbq.jpg);
+                            }
+                            &.fishing {
+                                background-image: url(./../images/top/fishing.jpg);
+                            }
+                        }
+
+                    }
+                    p {
+                        position: relative;
+                        color: #fff;
+                        font-size: 16px;
+                        padding-top: 40px;
+                        font-weight: bold;
+                        &::before {
+                            content: "";
+                            width: 20px;
+                            height: 2px;
+                            background: #fff;
+                            display: block;
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                        }
+                    }
+
                 }
             }
         }
@@ -333,7 +411,7 @@ h2.sec_ttl--center {
     }
     .page__mainVisual--content {
         position: relative;
-        width: 43%;
+        width: 60%;
         h1 {
             position: relative;
             right: -12rem;
@@ -343,10 +421,12 @@ h2.sec_ttl--center {
                 color: #99C8E3;
                 line-height: 1.2;
                 font-weight: normal;
+                display: block;
                 font-size: clamp(125px, 10.5rem + 10vw, 18rem);
             }
             b {
                 color: #214F6A;
+                display: block;
                 font-size: clamp(48px, 4.036rem + 3.82vw, 6.9rem);
             }
         }

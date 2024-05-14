@@ -62,7 +62,7 @@
 				<div class="menu__wrapper--left">
 					<ul class="flex">
 						<li class="aonodokutsu">
-							<a href="/" class="common__btn common__btn--white">青の洞窟・恩納村コース</a>
+							<a href="/aonodokutsu" class="common__btn common__btn--white">青の洞窟・恩納村コース</a>
 						</li>
 						<li class="sup">
 							<a href="/" class="common__btn common__btn--white">SUP・シーカヤック</a>
@@ -74,7 +74,7 @@
 							<a href="/" class="common__btn common__btn--white">パラセーリング</a>
 						</li>
 						<li class="bbq">
-							<a href="/" class="common__btn common__btn--white">セットメニュー</a>
+							<a href="/" class="common__btn common__btn--white">BBQ</a>
 						</li>
 						<li class="fishing">
 							<a href="/" class="common__btn common__btn--white">フィッシング＆グリル</a>

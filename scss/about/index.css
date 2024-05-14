@@ -78,6 +78,9 @@ header {
 }
 header .header__wrap {
   width: 100%;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
 }
 header .header__wrap a.header__logo {
   width: 246px;
@@ -86,20 +89,20 @@ header .header__wrap a.header__logo {
 header .header__wrap a.header__logo img {
   width: 100%;
 }
-header .header__wrap ul {
+header .header__wrap ul#gnav {
   width: 60%;
 }
-header .header__wrap ul li a {
+header .header__wrap ul#gnav li a {
   color: #3B4043;
   padding: 38px 0;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-header .header__wrap ul li:last-child {
+header .header__wrap ul#gnav li:last-child {
   width: 172px;
 }
-header .header__wrap ul li:last-child a {
+header .header__wrap ul#gnav li:last-child a {
   color: #fff;
   display: block;
   width: 100%;
@@ -107,6 +110,77 @@ header .header__wrap ul li:last-child a {
   background-color: #214F6A;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+header .hidden__menu {
+  width: 100%;
+  background: #4E829F;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  top: 100%; /* 親要素の下に配置 */
+  left: 0;
+  transition: transform 0.5s ease-out;
+  transform: translateY(-150%);
+}
+header .hidden__menu.show {
+  display: block;
+  transform: translateY(0);
+}
+header .hidden__menu .container ul {
+  justify-content: space-around;
+}
+header .hidden__menu .container ul li {
+  width: 15%;
+}
+header .hidden__menu .container ul li a {
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+header .hidden__menu .container ul li a .course__thumb {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70%;
+  transition: transform 0.5s ease-out;
+  overflow: hidden;
+  width: 100%;
+}
+header .hidden__menu .container ul li a .course__thumb.aonodokutsu {
+  background-image: url(./../images/common/aonodokutsu-menu.jpg);
+}
+header .hidden__menu .container ul li a .course__thumb.sup {
+  background-image: url(./../images/top/sup.jpg);
+}
+header .hidden__menu .container ul li a .course__thumb.marinactivity {
+  background-image: url(./../images/top/marinactivity.jpg);
+}
+header .hidden__menu .container ul li a .course__thumb.pala {
+  background-image: url(./../images/top/pala.jpg);
+}
+header .hidden__menu .container ul li a .course__thumb.bbq {
+  background-image: url(./../images/top/bbq.jpg);
+}
+header .hidden__menu .container ul li a .course__thumb.fishing {
+  background-image: url(./../images/top/fishing.jpg);
+}
+header .hidden__menu .container ul li p {
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 40px;
+  font-weight: bold;
+}
+header .hidden__menu .container ul li p::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
 }
 
 /*-------------------------
@@ -330,7 +404,7 @@ h2.sec_ttl--center strong {
 }
 .page__mainVisual .page__mainVisual--content {
   position: relative;
-  width: 43%;
+  width: 60%;
 }
 .page__mainVisual .page__mainVisual--content h1 {
   position: relative;
@@ -342,10 +416,12 @@ h2.sec_ttl--center strong {
   color: #99C8E3;
   line-height: 1.2;
   font-weight: normal;
+  display: block;
   font-size: clamp(125px, 10.5rem + 10vw, 18rem);
 }
 .page__mainVisual .page__mainVisual--content h1 b {
   color: #214F6A;
+  display: block;
   font-size: clamp(48px, 4.036rem + 3.82vw, 6.9rem);
 }
 

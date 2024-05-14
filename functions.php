@@ -8,8 +8,14 @@ the_post_thumbnail('large');
 
 function my_styles()  {
     // page-sample用のCSS
+    if ( is_page('') ) {
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      }
     if ( is_page('about') ) {
-      wp_enqueue_style( 'profile_css', get_template_directory_uri() . '/scss/about/index.css');
+      wp_enqueue_style( 'about_css', get_template_directory_uri() . '/scss/about/index.css');
+      }
+    if ( is_page('aonodokutsu') ) {
+      wp_enqueue_style( 'aonodokutsu_css', get_template_directory_uri() . '/scss/aonodokutsu/index.css');
       }
 
 

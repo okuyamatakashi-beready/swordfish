@@ -32,9 +32,19 @@
             line-height: 1.5;
             color: #fff;
             font-weight: bold;
+            @media screen and (max-width: 768px) {
+                font-size: 26px;
+                left: 40px;
+                top: auto;
+                bottom: 10%;
+            }
         }
     }
-
+    @media screen and (max-width: 768px) {
+        p.catch {
+            font-size: 30px;
+        }
+    }
 }
 
 /*-------------------------
@@ -43,13 +53,22 @@
 #about {
     padding-top: 12rem;
     margin-bottom: 3rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
+    }
     .left_container {
         width: 84.375%;
         margin-right: auto;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
         .about__slider {
             width: 59%;
             margin: 0 auto; // 中央揃え
-        
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 40px;
+            }
             .about__slider--slide {
                 display: inline-block;
                 width: 100%; // 各スライドの幅をスライダーの幅に合わせる
@@ -63,6 +82,11 @@
         
         .about__right {
             margin-left: 17rem;
+            @media screen and (max-width: 768px) {
+                width: 89%;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 }
@@ -74,11 +98,18 @@
 #menu {
     padding-top: 17rem;
     margin-bottom: 10rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+    }
    .menu__wrapper {
     position: relative;
     align-items: flex-start;
         .menu__wrapper--left {
             width: 74%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                order: 2;
+            }
             ul {
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -86,6 +117,10 @@
                     &:first-child {
                         width: 100%;
                         padding-top: 35%;
+                        @media screen and (max-width: 768px) {
+                            padding-top: 200px;
+                            padding-bottom: 20px;
+                        }
                     }
                     width: 49%;
                     padding-top: 25%;
@@ -93,6 +128,11 @@
                     text-align: center;
                     @include v.bg;
                     margin-top: 2%;
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        padding-top: 200px;
+                        padding-bottom: 20px;
+                    }
                     a {
                         display: block;
                         margin: auto;
@@ -100,6 +140,9 @@
                         background-color: #fff;
                         color: #204F6A;
                         font-size: clamp(14px,1.6rem,18px);
+                        @media screen and (max-width: 768px) {
+                            width: 60%;
+                        }
                     }
                     &.aonodokutsu {
                         background-image: url(./../images/top/aonodokutsu.jpg);
@@ -129,6 +172,12 @@
         right: 0;
         width: 15%;
         margin-right: 5%;
+        @media screen and (max-width: 768px) {
+            position: relative;
+            width: 89%;
+            margin: 0px auto 60px auto;
+            order: 1;
+        }
    }
 }
 
@@ -144,12 +193,19 @@
     .feature__content {
         align-items: flex-start;
         margin-bottom: 15rem;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 60px;
+        }
         .feature__text {
             width: 40%;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
             flex-flow: column;
+            @media screen and (max-width: 768px) {
+                order: 1;
+                width: 100%;
+            }
             span {
                 display: inline-block;
                 color: #fff;
@@ -160,6 +216,10 @@
                 width: 130px;
                 text-align: center;
                 padding: 5px 0;
+                @media screen and (max-width: 768px) {
+                    font-size: 13px;
+                    width: 100px;
+                }
             }
             .feature__ttl {
                 width: 100%;
@@ -168,6 +228,10 @@
                     display: block;
                     color: #214F6A;
                     position: relative;
+                    @media screen and (max-width: 768px) {
+                        font-size: 26px;
+                        margin-bottom: 50px;
+                    }
                     &::after {
                         content: "";
                         width: 40px;
@@ -176,6 +240,10 @@
                         position: absolute;
                         left: 0;
                         bottom: -20px;
+                        @media screen and (max-width: 768px) {
+                            height: 3px;
+                            width: 25px;
+                        }
                     }
                 }
                 p {
@@ -190,12 +258,23 @@
             order: 2;
             width: 30%;
             margin-left: 15rem;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-left: 0;
+            }
         }
         .feature__images {
             width: 60%;
             padding-top: 40%;
             @include v.bg;
             box-shadow: 0px 0px 40px rgba(19, 54, 111, 0.3);
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding-top: 0;
+                height: 250px;
+                margin-bottom: 30px;
+                box-shadow: 0px 0px 10px rgba(19, 54, 111, 0.3);
+            }
         }
 
     }
@@ -222,17 +301,26 @@
 -------------------------*/
 #staff {
     padding-top: 7rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 120px;
+    }
     .container {
         width: 68.75%;
         margin-left: auto;
         margin-right: auto;
-
+        @media screen and (max-width: 768px) {
+            width: 89%;
+        }
         ul {
             justify-content: space-between;
             margin-top: 6rem;
             li {
                 width: 18%;
                 margin-bottom: 8rem;
+                @media screen and (max-width: 768px) {
+                    width: 45%;
+                }
                 .member__thumb {
                     width: 100%;
                     padding-top: 100%;
@@ -246,11 +334,17 @@
                        display: block;
                        text-align: center;
                        margin-bottom: 1rem;
+                       @media screen and (max-width: 768px) {
+                           font-size: 18px;
+                       }
                     }
                     span {
                         text-align: center;
                         display: block;
                         font-size: 10px;
+                        @media screen and (max-width: 768px) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -265,6 +359,9 @@
     width: 100%;
     position: relative;
     padding: 8rem 0;
+    @media screen and (max-width: 768px) {
+        padding: 60px 0;
+    }
     &::before {
         content: "";
         background-color: #F1F8FF;
@@ -286,11 +383,20 @@
         ul {
             flex-wrap: wrap;
             margin-top: 6rem;
+            @media screen and (max-width: 768px) {
+                margin-top: 60px;
+            }
             li {
                 width: 32%;
                 padding-top: 20%;
                 @include v.bg;
                 padding-bottom: 3%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    padding-top: 150px;
+                    padding-bottom: 30px;
+                    margin-bottom: 20px;
+                }
                 a {
                     display: block;
                     .post_ttl {
@@ -320,6 +426,9 @@
             margin-right: auto;
             margin-left: auto;
             margin-top: 60px;
+            @media screen and (max-width: 768px) {
+                margin-top: 30px;
+            }
         }
     }
 }
@@ -331,6 +440,10 @@
 #contact__wrap {
     padding-top: 20rem;
     padding-bottom: 12rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
     .container {
         width: 93%;
         margin-right: auto;
@@ -342,12 +455,22 @@
                 position: relative;
                 box-shadow: 0px 0px 40px rgba(19, 54, 111, 0.2);
                 border-radius: 50px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    box-shadow: 0px 0px 10px rgba(19, 54, 111, 0.2);
+                    border-radius: 15px;
+                    margin-bottom: 20px;
+                }
                 img {
                     position: absolute;
                     top: 0;
                     bottom: 0;
                     right: 6rem;
                     margin: auto;
+                    @media screen and (max-width: 768px) {
+                        width: 45px;
+                        right: 30px;
+                    }
                 }
                 .contact__btn--content {
                     strong {
@@ -358,6 +481,9 @@
                         margin-bottom: 5rem;
                         position: relative;
                         font-family: "futura-pt", sans-serif;
+                        @media screen and (max-width: 768px) {
+                            font-size: 30px;
+                        }
                         &::before {
                             content: "";
                             width: 50px;
@@ -376,6 +502,9 @@
                         font-weight: bold;
                         text-align: center;
                         font-size: clamp(20px, 1.709rem + 1.45vw, 2.8rem);
+                        @media screen and (max-width: 768px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }

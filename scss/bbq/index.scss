@@ -1,0 +1,158 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        background-image: url(./../../images/about/mv.png);
+    }
+}
+
+p.about__text {
+    font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+    color: #214F6A;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+.features__wrap {
+    .right__container {
+        width: 84.375%;
+        margin-left: auto;
+        margin-bottom: 20rem;
+        .flex {
+            .features__img--right {
+                width: 50%;
+                padding-top: 30%;
+                background-image: url(./../../images/about/features_01.jpg);
+                border-top-left-radius: 60px;
+                border-bottom-left-radius: 60px;
+            }
+        }
+    }
+    .bbq_img01 {
+        @include v.bg;
+        background-image: url(./../../images/bbq/bbq_img01.jpg);
+        width: 84%;
+        padding: 15% 0;
+        margin-bottom: 12rem;
+        border-top-right-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+    .left__container {
+        width: 84.375%;
+        margin-right: auto;
+        margin-bottom: 15rem;
+        .features__content {
+            order: 2
+        }
+        .features__img--left {
+            order: 1;
+            width: 50%;
+            padding-top: 30%;
+            background-image: url(./../../images/bbq/bbq_img03.jpg);
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 60px;
+            margin-right: 12rem;
+        }
+    }
+    .container {
+        margin-bottom: 15rem;
+        .flex {
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .features__content {
+            width: 50%;
+        }
+        .features__img--2 {
+            width: 37.8%;
+            background-image: url(./../../images/bbq/bbq_img02.jpg);
+            border-radius: 60px;
+            padding-top: 50%;
+            order: 1;
+        }
+        .features__img--3 {
+            background-image: url(./../../images/about/features_03.jpg);
+            width: 45%;
+            padding-top: 35.6%;
+            border-radius: 60px;
+        }
+    }
+    .features__content {
+        h3 {
+            color: #214F6A;
+            font-size: clamp(21px, 1.336rem + 3.82vw, 4.2rem);
+            margin-bottom: 3rem;
+            b {
+                display: block;
+                font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+                padding-top: 4rem;
+            }
+            span {
+                font-family: "futura-pt";
+                font-weight: 400;
+                padding-left: 40px;
+                position: relative;
+                font-size: 16px;
+                display: block;
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 2px;
+                    background-color: #214F6A;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                }
+                &.menu {
+                    color: #fff;
+                    background: #000;
+                    padding: 3px 10px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    display: inline-block;
+                    margin-bottom: 2rem;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        p.ttl {
+            text-align: center;
+            color: #fff;
+            background-color: #000;
+            padding: 5px 0;
+            font-weight: 500;
+            font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+        }
+        p.about__text {
+            margin-bottom: 7rem;
+        }
+        span.option_ttl {
+            color: #214F6A;
+            font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+            border: 1px solid #214F6A;
+            padding: 8px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+        p.price {
+            font-size: clamp(22px, 1.836rem + 1.82vw, 3.2rem);
+            font-weight: bold;
+        }
+    }
+    .features__content--right {
+        order: 2;
+        
+    }
+    .features__img {
+        @include v.bg;
+    }
+}

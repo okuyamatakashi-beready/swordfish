@@ -38,12 +38,15 @@
 			<div id="iframe_player_api"></div>
 			<span id="close_btn"><img src="</?php echo get_template_directory_uri(); ?>/images/close.png" width="60" alt="×" /></span>
 		</div> -->
-
+		<a href="/" class="header__logo sp">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" class="black">
+		</a>
 	<header id="header">
 		<div class="header__wrap">
 			<div class="flex">
 				<a href="/" class="header__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/common/logo.svg" class="pc">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/common/logo-white.svg" class="sp">
 				</a>
 
 				<ul id="gnav" class="flex">
@@ -54,19 +57,56 @@
 						<a href="/about">Sword Fishとは</a>
 					</li>
 					<li class="course">
-						<a href="">コース</a>
+						<a href="" class="pc">コース</a>
+						<p class="sp flex">
+							
+							<span>コース</span>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/common/sp-toggle.svg">	
+						</p>
+						<ul class="sp-hidden">
+							<li>
+								<a href="/aonodokutsu">
+									<p>青の洞窟・恩納村コース</p>
+								</a>
+							</li>
+							<li>
+								<a href="/sup">
+									<p>SUP・シーカヤック</p>
+								</a>
+							</li>
+							<li>
+								<a href="/marinactivity">
+									<p>マリンアクティビティ</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>パラセーリング</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>BBQ</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<p>フィッシング＆グリル</p>
+								</a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="">Food</a>
+						<a href="/bbq">BBQ</a>
 					</li>
 					<li>
-						<a href="">特徴</a>
+						<a href="/faq">Q&A</a>
 					</li>
 					<li>
-						<a href="">スタッフ</a>
+						<a href="/#staff">スタッフ</a>
 					</li>
 					<li>
-						<a href="">お知らせ</a>
+						<a href="/news">お知らせ</a>
 					</li>
 					<li>
 						<a href="">予約</a>
@@ -86,13 +126,13 @@
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/sup">
 							<div class="course__thumb sup"></div>
 							<p>SUP・シーカヤック</p>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/marinactivity">
 							<div class="course__thumb marinactivity"></div>
 							<p>マリンアクティビティ</p>
 						</a>
@@ -122,7 +162,6 @@
 	<!-- //header -->
 
 	<div id="toggle">
-		<span></span>
 		<span></span>
 		<span></span>
 	</div>

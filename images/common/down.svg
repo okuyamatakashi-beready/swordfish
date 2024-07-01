@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="down" transform="translate(-0.441 -0.441)">
+    <g id="invisible_box" data-name="invisible box">
+      <rect id="長方形_23" data-name="長方形 23" width="30" height="30" transform="translate(0.441 0.441)" fill="none"/>
+    </g>
+    <g id="icons_Q2" data-name="icons Q2" transform="translate(1.268 1.268)">
+      <path id="パス_2" data-name="パス 2" d="M15.952,27.368A11.416,11.416,0,1,1,27.368,15.952,11.416,11.416,0,0,1,15.952,27.368m0,2.537a13.889,13.889,0,1,0-9.884-4.068A13.952,13.952,0,0,0,15.952,29.9Z" transform="translate(-2 -2)" fill="#4d4d4d"/>
+      <path id="パス_3" data-name="パス 3" d="M20.342,23.551l-4.186-4.186a1.2,1.2,0,0,0-1.9.127,1.332,1.332,0,0,0,.127,1.712l5.074,5.01a1.2,1.2,0,0,0,1.776,0L26.3,21.2a1.332,1.332,0,0,0,.127-1.712,1.2,1.2,0,0,0-1.9-.127Z" transform="translate(-6.39 -8.204)" fill="#4d4d4d"/>
+    </g>
+  </g>
+</svg>

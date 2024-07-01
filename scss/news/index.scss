@@ -1,0 +1,12 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        background-image: url(./../../images/about/mv.png);
+    }
+}
+
+#news {
+    margin-bottom: 20rem;
+    padding: 12rem 0;
+}

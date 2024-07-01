@@ -1,0 +1,35 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        background-image: url(./../../images/sup/mv.jpg);
+    }
+}
+
+.course__point {
+    .point__thumb--01 {
+        background-image: url(./../../images/sup/point01.jpg);
+    }
+    .point__thumb--02 {
+        background-image: url(./../../images/sup/point02.jpg);
+    }
+    .point__thumb--03 {
+        background-image: url(./../../images/sup/point03.jpg);
+    }
+}
+.course__point .point__content h2 strong {
+    font-size: clamp(30px, 1.909rem + 5.45vw, 4.5rem);
+}
+
+.menu {
+    .menu__wrapper {
+        .menu--01 {
+            .menu__slider--01 {
+                .menu__slider--slide01 {
+                    background-image: url(/wp-content/themes/swordfish/images/sup/menu01-img01.jpg);
+                }
+            }
+        }
+    }
+}

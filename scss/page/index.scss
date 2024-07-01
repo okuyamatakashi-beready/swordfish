@@ -59,3 +59,347 @@
         }
     }
 }
+
+/*-------------------------
+    アメニティ
+-------------------------*/
+.amenities {
+    margin-bottom: 30rem;
+    .container {
+        align-items: flex-start;
+        .amenities__content {
+            width: 26%;
+            h3 {
+                color: #214F6A;
+                font-size: clamp(21px, 1.773rem + 1.64vw, 30px);
+                margin-bottom: 5rem;
+                span {
+                    display: inline-block;
+                    font-size: clamp(12px, 1.055rem + 0.73vw, 16px);
+                    margin-bottom: 2.2rem;
+                    padding-left: 4rem;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 20px;
+                        height: 2px;
+                        background-color: #214F6A;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        display: block;
+                    }
+                }
+                strong {
+                    letter-spacing: 0.15em;
+                    display: block;
+                }
+            }
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 2;
+            }
+        }
+        ul {
+            width: 66%;
+            align-items: flex-start;
+            li {
+                width: 32%;
+                background-color: #E9ECEE;
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+                border-radius: 25px;
+                b {
+                    font-size: clamp(12px, 0.909rem + 1.45vw, 20px);
+                    display: block;
+                    text-align: center;
+                    line-height: 1.5em;
+                    margin-top: 2.5rem;
+                }
+                .amenities__thumb {
+                    @include v.bg;
+                    width: 82%;
+                    padding-top: 80%;
+                    border-radius: 25px;
+                    margin: auto;
+                }
+                .amenities__thumb--01 {
+                    background-image: url(/wp-content/themes/swordfish/images/common/amenity01.jpg);
+                }
+                .amenities__thumb--02 {
+                    background-image: url(/wp-content/themes/swordfish/images/common/amenity02.jpg);
+                }
+                .amenities__thumb--03 {
+                    background-image: url(/wp-content/themes/swordfish/images/common/amenity03.jpg);
+                }
+            }
+        }
+    }
+}
+
+/*-------------------------
+    コースページメニュー
+-------------------------*/
+.menu {
+    margin-bottom: 23rem;
+    .menu__wrapper {
+        & > .flex {
+
+        }
+        .menu__slider {
+            width: 50%;
+            
+            .menu__slider--slide {
+                @include v.bg;
+                height: 45vw;
+            }
+            
+        }
+        
+
+        .menu__content {
+            width: 40%;
+            margin-right: 3%;
+            h3 {
+                color: #214F6A;
+                font-size: clamp(21px, 1.773rem + 1.64vw, 3rem);
+                margin-bottom: 4.5rem;
+                span {
+                    display: inline-block;
+                    font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
+                    margin-bottom: 2.2rem;
+                    padding-left: 4rem;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 20px;
+                        height: 2px;
+                        background-color: #214F6A;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        display: block;
+                    }
+                }
+                strong {
+                    display: block;
+                }
+            }
+            p.menu__text {
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 5.7rem;
+                color: #214F6A;
+                font-weight: bold;
+                
+                line-height: 2;
+            }
+            .menu__price {
+                width: 63%;
+                margin-bottom: 5rem;
+                dl {
+                    justify-content: space-between;
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid #C3C3C3;
+                    margin-bottom: 2rem;
+                    dt {
+                        font-size: clamp(12px, 0.982rem + 1.09vw, 1.8rem);
+                        color: #214F6A;
+                        font-weight: bold;
+                        span {
+                            color: #fff;
+                            padding: 8px 13px;
+                            display: inline-block;
+                            background-color:#FF3C00;
+                            border-radius: 8px;
+                        }
+                    }
+                    dd {
+                        font-size: clamp(18px, 1.582rem + 1.09vw, 2.4rem);
+                        font-weight: 500;
+                        color: #214F6A;
+                        font-weight: bold;
+                        &.off {
+                            font-size: clamp(21px, 1.773rem + 1.64vw, 3rem);
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .menu__detail {
+                background-color: #F0F0F0;
+                width: 63%;
+                padding: 25px;
+                box-sizing: border-box;
+                margin-bottom: 6.7rem;
+                dl {
+                    justify-content: space-between;
+                    border-bottom: 1px dashed #707070;
+                    padding-bottom: 1rem;
+                    margin-bottom: 1rem;
+                    color: #214F6A;
+                    align-items: flex-start;
+                    dt {
+                        font-size: clamp(14px, 1.182rem + 1.09vw, 2rem);
+                        font-weight: bold;
+                    }
+                    dd {
+                        font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
+                        text-align: right;
+                        font-weight: bold;
+                        line-height: 2;
+                    }
+                    &:nth-of-type(2) {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .menu__btnWrap {
+                width: 63%;
+                justify-content: space-between;
+                a {
+                    color: #fff;
+                    text-align: center;
+                    display: block;
+                    border-radius: 50px;
+                    padding: 18px 0;
+                    width: 44%;
+                    font-size: clamp(12px, 1.055rem + 0.73vw, 1.6rem);
+                    font-weight: bold;
+                    &.detail {
+                        background-color: #FF4D68;
+                    }
+                    &.reserve {
+                        background-color: #004BB1;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu--01 {
+    margin-bottom: 8rem;
+}
+.menu .menu__wrapper .menu__slider .menu__slider--slide {
+    height: 35vw;
+}
+.menu__slider--slide01 {
+    background-image: url(./../../images/bbq/menu01.jpg);
+}
+.menu__slider--slide02 {
+    background-image: url(./../../images/bbq/menu02.jpg);
+}
+.menu__slider--slide03 {
+    background-image: url(./../../images/bbq/menu03.jpg);
+}
+.menu__slider--slide04 {
+    background-image: url(./../../images/bbq/menu04.jpg);
+}
+
+
+/*-------------------------
+    Q&A
+-------------------------*/
+
+#faq {
+	margin-top: 78px;
+}
+dl.qa_line {
+	border-left: 6px solid #214F6A;
+	padding-left: 30px;
+	background-color: #F8F8F8;
+	padding-right: 90px;
+}
+dl.qa_line dt {
+	padding: 40px 0;
+	font-size: 22px;
+	color: #4D4D4D;
+	font-weight: bold;
+	position: relative;
+}
+dl.qa_line dt::after {
+	content: "";
+	background-image:url(./../../images/common/down.svg);
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	right: 0;
+	transition: 0.3s all;
+}
+dl.qa_line dt.open::after {
+	content: "";
+	background-image:url(./../../images/common/down.svg);
+	background-size: contain;
+	transform: rotate(180deg);
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	right: 0;
+}
+dl.qa_line dd {
+	font-size: 16px;
+	padding: 10px 0 40px 0;
+	display: none;
+	position: relative;
+	line-height: 2;
+	color: #4D4D4D;
+}
+dl.qa_line dt,
+dl.qa_line dd > div {
+	justify-content: flex-start;
+}
+dl.qa_line dd > div {
+	align-items: flex-start;
+}
+dl.qa_line dt span,
+dl.qa_line dd span {
+	font-family: 'jost';
+	font-size: 40px;
+	line-height: 1;
+	display: block;
+	width: 34px;
+	padding-right: 50px;
+}
+dl.qa_line dd p {
+	width: calc(100% - 84px);
+    div {
+        margin-bottom: 4rem;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    #faq {
+		margin-top: 0;
+	}
+	dl.qa_line dt span, dl.qa_line dd span {
+		font-size: 30px;
+		padding-right: 20px;
+	}
+	dl.qa_line dt {
+		font-size: 14px;
+		width: 100%;
+		padding: 20px 40px 20px 0;
+		box-sizing: border-box;
+	}
+	dl.qa_line dd {
+		padding: 10px 0 20px 0;
+	}
+	dl.qa_line {
+		padding-right: 15px;
+	}
+	dl.qa_line dd p {
+		font-size: 14px;
+		width: calc(100% - 65px);
+	}
+}

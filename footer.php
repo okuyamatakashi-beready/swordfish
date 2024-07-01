@@ -37,28 +37,28 @@
 					<div class="footer__right">
 						<ul class="footer__nav flex">
 							<li>
-								<a href="">ホーム</a>
+								<a href="/">ホーム</a>
 							</li>
 							<li>
-								<a href="">メニュー</a>
+								<a href="/#menu">メニュー</a>
 							</li>
 							<li>
-								<a href="">ショップ</a>
+								<a href="/about">Sword Fishとは</a>
 							</li>
 							<li>
-								<a href="">スタッフ</a>
+								<a href="/staff">スタッフ</a>
 							</li>
 							<li>
-								<a href="">Q&A</a>
+								<a href="/faq">Q&A</a>
 							</li>
 							<li>
-								<a href="">ニュース</a>
+								<a href="/news">ニュース</a>
 							</li>
 							<li>
 								<a href="">ご予約</a>
 							</li>
 							<li>
-								<a href="">プライバシーポリシー</a>
+								<a href="/policy">プライバシーポリシー</a>
 							</li>
 							<li>
 								<a href="">特定商取引法に基づく表記</a>

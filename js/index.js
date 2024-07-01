@@ -19,6 +19,26 @@ $(document).ready(function(){
 });
 
 /*
+	メニュースライダー
+*/
+
+$(document).ready(function(){
+    $('.menu__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: 'linear',
+        
+        infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        arrows: false,
+        dots: false
+    });
+});
+
+/*
 	SWORD FISH SHOPの無限文字
 */
 $(document).ready(function() {
@@ -39,6 +59,10 @@ $(function() {
 	$('.feature__text').matchHeight({
         target: $('.feature__images')
     });
+});
+
+$(function() {
+	$('.amenities .container ul li').matchHeight();
 });
 
 /*
@@ -83,3 +107,34 @@ document.addEventListener('DOMContentLoaded', function() {
         hiddenMenu.classList.remove('show');
     });
 });
+
+
+$(function(){
+    $("dl.qa_line dt").on("click", function() {
+        $(this).next().slideToggle();
+        });
+});
+    
+$(function(){
+    $("dl.qa_line dt").on("click", function() {
+        $(this).toggleClass("open");
+        });
+});
+
+
+// toggle開閉
+$('#toggle').on('click',function(){
+    $('body').toggleClass('open');
+  });
+  // toggle開閉
+    $('.header_wrap nav ul li a').on('click',function(){
+    $('body').removeClass('open');
+  });
+
+
+$(document).ready(function(){
+    $("p.sp").click(function(){
+        $(this).next("ul.sp-hidden").slideToggle();
+    });
+});
+

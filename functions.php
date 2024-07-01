@@ -14,14 +14,32 @@ function my_styles()  {
     if ( is_page('about') ) {
       wp_enqueue_style( 'about_css', get_template_directory_uri() . '/scss/about/index.css');
       }
+    if ( is_page('bbq') ) {
+      wp_enqueue_style( 'bbq_css', get_template_directory_uri() . '/scss/bbq/index.css');
+      }
     if ( is_page('aonodokutsu') ) {
       wp_enqueue_style( 'aonodokutsu_css', get_template_directory_uri() . '/scss/aonodokutsu/index.css');
+      }
+    if ( is_page('sup') ) {
+      wp_enqueue_style( 'sup_css', get_template_directory_uri() . '/scss/sup/index.css');
+      }
+    if ( is_page('marinactivity') ) {
+      wp_enqueue_style( 'marinactivity_css', get_template_directory_uri() . '/scss/marinactivity/index.css');
+      }
+    if ( is_page('faq') ) {
+      wp_enqueue_style( 'faq_css', get_template_directory_uri() . '/scss/faq/index.css');
+      }
+    if ( is_page('news') ) {
+      wp_enqueue_style( 'news_css', get_template_directory_uri() . '/scss/news/index.css');
+      }
+    if ( is_page('policy') ) {
+      wp_enqueue_style( 'policy_css', get_template_directory_uri() . '/scss/policy/index.css');
       }
 
 
 
-    if ( is_singular('topics') ) {
-      wp_enqueue_style( 'topics_css', get_template_directory_uri() . '/scss/topics/topics.css');
+    if ( is_singular('aonodoukutsu') ) {
+      wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
       }
 
     }

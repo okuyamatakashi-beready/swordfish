@@ -4,7 +4,7 @@
 		<div id="mv">
 			<div class="mv__wrapper">
 				<video id="videoTop" autoplay muted playsinline loop width="1920px" height="1080px">
-					<source src="<?php echo get_template_directory_uri(); ?>/images/video/pc_mv.mp4" type="video/mp4">
+					<source src="<?php echo get_template_directory_uri(); ?>/images/video/mainvisual.webm">
 				</video>
 				<p class="catch">
 					海で見つける<br>
@@ -44,7 +44,7 @@
 								サイトの紹介文が入りますサイトの紹介文が入りますサイトの紹介文が入ります
 							</p>
 
-							<a href="/" class="common__btn">詳しく見る</a>
+							<a href="/about" class="common__btn">詳しく見る</a>
 						</div>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 							そんな気持ちでお客様をお待ちしております！お客様の笑顔に出会えることが私たちの一番の楽しみです！
 						</p>
 
-						<a href="/" class="common__btn">詳しく見る</a>
+						<!-- <a href="/" class="common__btn">詳しく見る</a> -->
 					</div>
 				</div>
 			</div>
@@ -236,7 +236,7 @@
 
 				</ul>
 
-				<a href="/" class="common__btn">詳しく見る</a>
+				<a href="/news" class="common__btn">詳しく見る</a>
 			</div>
 		</section>
 

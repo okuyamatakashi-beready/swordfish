@@ -38,7 +38,7 @@
             <div class="features__content features__content">
                 <h3>
                     <span></span>
-                    <b>マリンアクティビティとBBQをセットでお申込みの場合</b>
+                    <b>マリンアクティビティと<br class="sp">BBQをセットでお申込みの場合</b>
                     BBQセット１人前　¥ 4,400
                 </h3>
                 <p class="ttl">セット内容</p>

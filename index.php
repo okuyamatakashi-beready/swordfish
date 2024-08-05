@@ -50,6 +50,8 @@
 				</div>
 				<!-- //flex -->
 			</div>
+
+			<div style="padding:56.25% 0 0 0;position:relative;" class="vimeo__player"><iframe src="https://player.vimeo.com/video/973608508?h=65df974c83&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="オーシャンベース修正_2024.06"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</section>
 
 		<div class="scroll__textWrapper">
@@ -65,19 +67,19 @@
 							<a href="/aonodokutsu" class="common__btn common__btn--white">青の洞窟・恩納村コース</a>
 						</li>
 						<li class="sup">
-							<a href="/" class="common__btn common__btn--white">SUP・シーカヤック</a>
+							<a href="/sup" class="common__btn common__btn--white">SUP・シーカヤック</a>
 						</li>
 						<li class="marinactivity">
-							<a href="/" class="common__btn common__btn--white">マリンアクティビティ</a>
+							<a href="/marin" class="common__btn common__btn--white">マリンアクティビティ</a>
 						</li>
 						<li class="pala">
-							<a href="/" class="common__btn common__btn--white">パラセーリング</a>
+							<a href="/parasail" class="common__btn common__btn--white">パラセーリング</a>
 						</li>
 						<li class="bbq">
-							<a href="/" class="common__btn common__btn--white">BBQ</a>
+							<a href="/bbq" class="common__btn common__btn--white">BBQ</a>
 						</li>
 						<li class="fishing">
-							<a href="/" class="common__btn common__btn--white">フィッシング＆グリル</a>
+							<a href="/fishing" class="common__btn common__btn--white">フィッシング＆グリル</a>
 						</li>
 					</ul>
 				</div>
@@ -237,6 +239,38 @@
 				</ul>
 
 				<a href="/news" class="common__btn">詳しく見る</a>
+			</div>
+		</section>
+
+		<section id="safe">
+			<h2>安全対策について</h2>
+			<div class="container">
+				<div class="safe__wrapper">
+					
+					<b>【安全対策】</b>
+					<ul>
+						<li>□資格保持インストラクターツアーを引率するスタッフは有資格者です</li>
+						<li>
+							□ツアーガイド規定<br>
+							ダイビング・・・最大2名様に対して1名のガイド<br>
+							シュノーケル・・・最大8名様に対して1名のガイド<br>
+							シーカヤック・・・最大5艇のカヤックに対して1名のガイド
+						</li>
+						<li>
+							□AED<br>
+							万が一に備えて、AEDを設置しています<br>
+							年に一度のAED講習を全職員で受講しています
+						</li>
+						<li>
+							□保険<br>
+							万が一に備えて、賠償責任保険・傷害保険に加入しています<br>
+							賠償責任補償・・・最大補償金額10億円<br>
+							傷害補償・・・最大補償金額500万円<br>
+							モーターボート賠償責任保険・・・最大補償金額1000万円<br>
+							施設所有者賠償責任保険・・・最大補償額1億円
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 

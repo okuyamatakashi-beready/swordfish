@@ -14,10 +14,11 @@
 <div class="menu">
     <div class="menu__wrapper">
 
-        <?php 
+    <?php 
             $course_ttl = get_field('course_ttl');
             $course_text = get_field('course_text');
             $course_price = get_field('course_price');
+            $twice_price = get_field('twice_price');
             $course_time = get_field('course_time');
             $course_amount = get_field('course_amount');
             $course_yoyaku = get_field('course_yoyaku');
@@ -44,6 +45,8 @@
             $place_img = get_field('place_img');
             $place_figcaption = get_field('place_figcaption');
             $place_iframe = get_field('place_iframe');
+            $banana = get_field('banana');
+            $course_add = get_field('course_add');
             ?>
         
         <div class="menu--01">

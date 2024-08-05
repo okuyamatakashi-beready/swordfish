@@ -8,6 +8,9 @@
 }
 #about__first {
     margin-bottom: 15rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 80px;
+    }
     .flex {
         justify-content: flex-start;
         .about__first--img {
@@ -18,9 +21,24 @@
             padding-top: 20%;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
+            @media screen and (max-width: 768px) {
+                order: 2;
+                width: 90%;
+                min-width: 1px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                padding-top: 0;
+                height: 150px;
+            }
         }
         .about__text {
             margin-left: 14rem;
+            @media screen and (max-width: 768px) {
+                width: 89%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
         }
     }
 }
@@ -37,13 +55,32 @@ p.about__text {
         width: 84.375%;
         margin-left: auto;
         margin-bottom: 20rem;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 80px;
+            .features__content {
+                width: 89%;
+                margin: 0 auto 40px auto;
+            }
+        }
         .flex {
+            @media screen and (max-width: 768px) {
+                justify-content: flex-end;
+            }
             .features__img--right {
                 width: 50%;
                 padding-top: 30%;
                 background-image: url(./../../images/about/features_01.jpg);
                 border-top-left-radius: 60px;
                 border-bottom-left-radius: 60px;
+                @media screen and (max-width: 768px) {
+                    width: 90%;
+                    padding-top: 0;
+                    height: 150px;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -51,8 +88,18 @@ p.about__text {
         width: 84.375%;
         margin-right: auto;
         margin-bottom: 15rem;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
         .features__content {
-            order: 2
+            order: 2;
+            @media screen and (max-width: 768px) {
+                width: 89%;
+                margin-right: auto;
+                margin-left: auto;
+                order: 1;
+                margin-bottom: 40px;
+            }
         }
         .features__img--left {
             order: 1;
@@ -62,10 +109,23 @@ p.about__text {
             border-top-right-radius: 60px;
             border-bottom-right-radius: 60px;
             margin-right: 12rem;
+            @media screen and (max-width: 768px) {
+                width: 90%;
+                padding-top: 0;
+                height: 150px;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin-right: auto;
+                order: 2;
+                margin-bottom: 80px;
+            }
         }
     }
     .container {
         margin-bottom: 15rem;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 80px;
+        }
         .features__img--2 {
             width: 37.8%;
             margin-right: 16%;
@@ -73,12 +133,31 @@ p.about__text {
             border-radius: 60px;
             padding-top: 37.8%;
             order: 1;
+            @media screen and (max-width: 768px) {
+                order: 2;
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 0;
+                height: 150px;
+                border-radius: 15px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
         }
         .features__img--3 {
             background-image: url(./../../images/about/features_03.jpg);
             width: 50%;
             padding-top: 35.6%;
             border-radius: 60px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding-top: 0;
+                height: 150px;
+                border-radius: 15px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
         }
     }
     .features__content {
@@ -86,6 +165,9 @@ p.about__text {
             color: #214F6A;
             font-size: clamp(21px, 1.336rem + 3.82vw, 4.2rem);
             margin-bottom: 3rem;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
             span {
                 font-family: "futura-pt";
                 font-weight: 400;

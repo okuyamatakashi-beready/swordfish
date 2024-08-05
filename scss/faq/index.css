@@ -481,7 +481,7 @@ h2.sec_ttl--center strong {
   }
   .container {
     min-width: 1px;
-    width: 84%;
+    width: 89%;
   }
   .order_1 {
     order: 2;
@@ -663,14 +663,36 @@ h2.sec_ttl--center strong {
   order: 2;
   border-bottom-left-radius: 50px;
 }
+@media screen and (max-width: 768px) {
+  .page__mainVisual .page__mainVisual--thumb {
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
 .page__mainVisual .page__mainVisual--content {
   position: relative;
   width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .page__mainVisual .page__mainVisual--content {
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 40px;
+  }
 }
 .page__mainVisual .page__mainVisual--content h1 {
   position: relative;
   right: -12rem;
   top: 0;
+}
+@media screen and (max-width: 768px) {
+  .page__mainVisual .page__mainVisual--content h1 {
+    right: 0;
+    margin-left: 20px;
+  }
 }
 .page__mainVisual .page__mainVisual--content h1 span {
   font-family: "antro";
@@ -680,10 +702,20 @@ h2.sec_ttl--center strong {
   display: block;
   font-size: clamp(125px, 10.5rem + 10vw, 18rem);
 }
+@media screen and (max-width: 768px) {
+  .page__mainVisual .page__mainVisual--content h1 span {
+    font-size: 60px;
+  }
+}
 .page__mainVisual .page__mainVisual--content h1 b {
   color: #214F6A;
   display: block;
   font-size: clamp(48px, 4.036rem + 3.82vw, 6.9rem);
+}
+@media screen and (max-width: 768px) {
+  .page__mainVisual .page__mainVisual--content h1 b {
+    font-size: 30px;
+  }
 }
 
 /*-------------------------
@@ -706,9 +738,22 @@ h2.sec_ttl--center strong {
   display: inline-block;
   vertical-align: middle;
 }
+@media screen and (max-width: 768px) {
+  #map .container .flex h2 strong {
+    font-size: 21px;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 #map .container .flex h2 span {
   font-size: 16px;
   vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  #map .container .flex h2 span {
+    margin-bottom: 20px;
+    display: block;
+  }
 }
 #map .container .flex a.common__btn {
   width: 240px;
@@ -723,6 +768,22 @@ h2.sec_ttl--center strong {
   width: 100%;
   height: 60rem;
   border-radius: 60px;
+}
+@media screen and (max-width: 768px) {
+  #map iframe {
+    height: 250px;
+    border-radius: 0px;
+    margin-bottom: 40px;
+  }
+}
+#map a.sp-flex {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #map a.sp-flex {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .page__mainVisual .page__mainVisual--thumb {

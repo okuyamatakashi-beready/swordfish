@@ -75,22 +75,23 @@
 								</a>
 							</li>
 							<li>
+								<a href="/fishing">
+									<p>フィッシング＆グリル</p>
+								</a>
+							</li>
+							
+							<li>
 								<a href="/marinactivity">
 									<p>マリンアクティビティ</p>
 								</a>
 							</li>
 							<li>
-								<a href="">
+								<a href="/parasail">
 									<p>パラセーリング</p>
 								</a>
 							</li>
 							<li>
-								<a href="">
-									<p>BBQ</p>
-								</a>
-							</li>
-							<li>
-								<a href="">
+								<a href="/fishing">
 									<p>フィッシング＆グリル</p>
 								</a>
 							</li>
@@ -138,19 +139,13 @@
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a href="/parasail">
 							<div class="course__thumb pala"></div>
 							<p>パラセーリング</p>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<div class="course__thumb bbq"></div>
-							<p>BBQ</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
+						<a href="/fishing">
 							<div class="course__thumb fishing"></div>
 							<p>フィッシング＆グリル</p>
 						</a>

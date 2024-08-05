@@ -35,11 +35,27 @@ function my_styles()  {
     if ( is_page('policy') ) {
       wp_enqueue_style( 'policy_css', get_template_directory_uri() . '/scss/policy/index.css');
       }
+    if ( is_page('parasail') ) {
+      wp_enqueue_style( 'parasail_css', get_template_directory_uri() . '/scss/parasail/index.css');
+      }
+    if ( is_page('fishing') ) {
+      wp_enqueue_style( 'fishing_css', get_template_directory_uri() . '/scss/fishing/index.css');
+      wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
+      }
 
 
 
     if ( is_singular('aonodoukutsu') ) {
       wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      }
+    if ( is_singular('marin') ) {
+      wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
+      }
+    if ( is_singular('sup') ) {
+      wp_enqueue_style( 'single_css', get_template_directory_uri() . '/scss/single/index.css');
+      wp_enqueue_style( 'page_css', get_template_directory_uri() . '/scss/page/index.css');
       }
 
     }

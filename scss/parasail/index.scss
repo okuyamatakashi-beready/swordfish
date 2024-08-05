@@ -1,0 +1,143 @@
+@use "./../config/variables" as v;
+@use "./../common" as c;
+
+.page__mainVisual {
+    .page__mainVisual--thumb {
+        background-image: url(./../../images/parasail/mv.jpg);
+    }
+}
+
+.course__point {
+    .point__thumb--01 {
+        background-image: url(./../../images/parasail/point01.jpg);
+    }
+    .point__thumb--02 {
+        background-image: url(./../../images/parasail/point02.jpg);
+    }
+    .point__thumb--03 {
+        background-image: url(./../../images/parasail/point03.jpg);
+    }
+}
+
+.parasail__time {
+    margin-bottom: 15rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+    h2 {
+        text-align: center;
+        font-size: clamp(4.2rem, 3.545rem + 3.27vw, 6rem);
+        color: #214F6A;
+        letter-spacing: 0.2em;
+        margin-bottom: 6rem;
+        @media screen and (max-width: 768px) {
+            font-size: 26px;
+        }
+    }
+    .parasail__wrapper {
+        background-color: #EBEBEB;
+        box-sizing: border-box;
+        padding: 60px;
+        border-radius: 15px;
+        @media screen and (max-width: 768px) {
+            padding: 30px;
+        }
+        p {
+            font-size: 16px;
+            color: #214F6A;
+            margin-bottom: 3rem;
+            font-weight: 500;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+        }
+        ul {
+            li {
+                font-weight: bold;
+                font-size: 18px;
+                color: #214F6A;
+                margin-bottom: 4rem;
+                line-height: 1.5;
+                padding-left: 1em;
+                text-indent: -1em;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+                span {
+                    font-size: 22px;
+                    color: #CB2D2D;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .yoyaku__wrapper {
+        width: 80%;
+        margin: auto;
+        & > span {
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-size: 22px;
+            border: 1px solid #000;
+            color: #214F6A;
+            font-weight: 500;
+            padding: 10px 0;
+        }
+        .flex {
+            justify-content: center;
+            div {
+                width: 45%;
+                margin-top: 40px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+                &:nth-of-type(1) {
+                    color: #FF4E68;
+                    text-align: center;
+                    font-weight: 500;
+                    span {
+                        font-size: 22px;
+                        display: block;
+                    }
+                    b {
+                        font-size: 26px;
+                        display: block;
+                    }
+                    a {
+                        background-color: #FF4E68;
+                        margin-right: auto;
+                        margin-left: auto;
+                        margin-top: 40px;
+                    }
+                }
+                &:nth-of-type(2) {
+                    color: #214F6A;
+                    text-align: center;
+                    font-weight: 500;
+                    span {
+                        font-size: 22px;
+                        display: block;
+                    }
+                    b {
+                        font-size: 26px;
+                        display: block;
+                    }
+                    a {
+                        background-color: #214F6A;
+                        margin-right: auto;
+                        margin-left: auto;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+.last {
+    margin-bottom: 26rem;
+}

@@ -108,60 +108,86 @@
 
 <div class="menu">
     <div class="menu__wrapper">
+    <?php
+            $paged = get_query_var('paged') ? get_query_var('paged') : 1 ;
+            $args = array(
+                'posts_per_page' => '6', //表示件数。-1なら全件表示
+                'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+                'paged' => $paged,
+                'post_type' => 'marin',
+                );
+        ?>
+        <?php $wp_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
+
+        <?php if ( $wp_query->have_posts() ) :
+
+            while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+
+        <?php 
+            $course_ttl = get_field('course_ttl');
+            $course_text = get_field('course_text');
+            $course_price = get_field('course_price');
+            $course_time = get_field('course_time');
+            $course_amount = get_field('course_amount');
+            $course_yoyaku = get_field('course_yoyaku');
+            $course_img = get_field('course_img');
+            ?>
         
         <div class="menu--01">
             <div class="flex">
                 <div class="menu__slider menu__slider--01">
-                    <div class="menu__slider--slide menu__slider--slide01"></div>
-                    <div class="menu__slider--slide menu__slider--slide01"></div>
-                    <div class="menu__slider--slide menu__slider--slide01"></div>
+                <?php if( have_rows('course_img') ): ?>
+                    <?php while( have_rows('course_img') ): the_row();
+                        $img = get_sub_field('img');
+                    ?>
+                    <?php if($course_img): ?>
+                        <div class="menu__slider--slide menu__slider--slide01" style="background-image:url(<?php echo $img;?>);"></div>
+                    <?php endif; ?>
+                <?php endwhile;?>
+                <?php endif; ?>
                 </div>
 
                 <div class="menu__content">
                     <h3>
-                        <span>Menu01</span>
+                        <span>Menu</span>
                         <strong>
-                        バナナボート＋ビッグマーブル
+                            <?php echo $course_ttl;?>
                         </strong>
                     </h3>
 
                     <p class="menu__text">
-                        とりあえずマリンスポーツを楽しみたい！そんなあなたにおすすめ！
+                    <?php echo $course_text;?>
                     </p>
 
                     <div class="menu__price">
                         <dl class="flex">
                             <dt>通常料金</dt>
-                            <dd>¥3,800（税込）</dd>
-                        </dl>
-                        <dl class="flex">
-                            <dt><span>事前決済割 10%OFF</span></dt>
-                            <dd class="off">¥3,420（税込）</dd>
+                            <dd><?php echo $course_price;?></dd>
                         </dl>
                     </div>
 
                     <div class="menu__detail">
                         <dl class="flex">
                             <dt>所要時間</dt>
-                            <dd>約30分</dd>
+                            <dd><?php echo $course_time;?></dd>
                         </dl>
                         <dl class="flex">
                             <dt>運行本数</dt>
                             <dd>
-                                10：00~、11：00~、12：00~<br>
-                                13：00~、14：00~、15：00~<br>
-                                の１日６便開催
+                                <?php echo $course_amount;?>
                             </dd>
                         </dl>
                     </div>
 
                     <div class="menu__btnWrap flex">
-                        <a href="" class="detail">詳細を見る</a>
-                        <a href="" class="reserve">予約する</a>
+                        <a href="<?php the_permalink();?>" class="detail">詳細を見る</a>
+                        <a href="<?php echo $course_yoyaku;?>" class="reserve">予約する</a>
                     </div>
                 </div>
             </div>
         </div>
+        <?php endwhile;?>
+        <?php endif; ?>
 
     </div>
 </div>

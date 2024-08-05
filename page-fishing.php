@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <div class="page__mainVisual flex">
-    <div class="page__mainVisual--thumb marin__thumb"></div>
+    <div class="page__mainVisual--thumb aonodoukutsu__thumb"></div>
     <div class="page__mainVisual--content">
         <h1>
             <span>Course List</span>
-            <b>マリンアクティビティ</b>
+            <b>フィッシング・グリル</b>
         </h1>
     </div>
 </div>
@@ -14,7 +14,7 @@
 <div class="menu">
     <div class="menu__wrapper">
 
-        <?php 
+    <?php 
             $course_ttl = get_field('course_ttl');
             $course_text = get_field('course_text');
             $course_price = get_field('course_price');
@@ -127,55 +127,6 @@
             </div>
         </div>
 
-    </div>
-</div>
-
-<div class="banana__wrapper">
-    <div class="container">
-        <div class="flex">
-            <?php 
-            if ($banana): ?>
-                <?php if (in_array('banana', $banana)): ?>
-            <div class="banana__content">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri();?>/images/marinactivity/banana.jpg" alt="">
-                </figure>
-                <b>バナナボート</b>
-                <small>Banana Boat</small>
-                <p>
-                    バナナボートは、その名の通りバナナ形をした大きな浮き輪に乗って、スピードボートに引かれながら海を疾走するエキサイティングなウォータースポーツです。特別な技術や準備が不要なため、どなたでも気軽に参加できます。安全に配慮した指導のもと、小さな子どもから大人まで、家族全員で楽しむことができるのが魅力。
-                </p>
-            </div>
-
-            <?php endif; ?>
-            <?php if (in_array('marble', $banana)): ?>
-            <div class="banana__content">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri();?>/images/marinactivity/marble.jpg" alt="">
-                </figure>
-                <b>ビッグマーブル</b>
-                <small>Big Marble</small>
-                <p>
-                ビッグマーブルは、スリル満点のウォータースポーツで、大きな丸い浮き輪に乗り、スピードボートに引かれて海上を滑走します。ビッグマーブルはその名の通り、大きなマーブル（ビー玉）のような形状で、このユニークな構造が生み出す予測不能な動きが最大の特徴です。波を跳ねながら様々な方向に転がるビッグマーブルに乗っている間、絶え間ない笑いとともに、心地よいスリルを味わうことができます。
-                </p>
-            </div>
-
-            <?php endif; ?>
-            <?php if (in_array('wagon', $banana)): ?>
-            <div class="banana__content">
-                <figure>
-                    <img src="<?php echo get_template_directory_uri();?>/images/marinactivity/wagon.jpg" alt="">
-                </figure>
-                <b>バンドワゴン</b>
-                <small>Band Wagon</small>
-                <p>
-                バンドワゴンは、グループで乗ることを前提とした新しいタイプのウォータースポーツで、円形または楕円形の大きな浮き輪に複数の人が乗り、スピードボートに引かれながら海上を疾走します。このアトラクションは、家族や友人同士の結束を深める楽しみとスリルを提供します。
-                </p>
-            </div>
-
-            <?php endif; ?>
-            <?php endif; ?>
-        </div>
     </div>
 </div>
 
